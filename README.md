@@ -1,5 +1,5 @@
 # ARVM
-Basic Emulator designed to solve simple arithmetic problems inside .NET assemblies using dnlib
+ARVM (Arithmetic Virtual Machine) is a basic Emulator designed to solve simple arithmetic problems inside .NET assemblies using dnlib
 
 
 # Introduction
