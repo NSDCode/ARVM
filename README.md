@@ -112,18 +112,6 @@ IL_0000: ret
 ```
 
 
-
-
-
-Create a list of ARVMInstructions, which will be basically your program, then create an instance of ARVM.
-Once you did this, you can simply run your program using the 'Run' method
-
-You can access the stack with the property 'vmStack'
-
-
-
-
-
 ## Credits
 
 Yeet-Emulator (i got inspired by his code): https://github.com/GabrieleAsaro/Yeet-Emulator
