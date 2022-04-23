@@ -9,9 +9,13 @@ ARVM has for purpose to be used to solve arithmetics problems inside .NET assemb
 
 # Usage
 ```cs
+    internal class MainTests
+    {
+        static void Main(string[] args)
+        {
             List<ARVMInstruction> instructions = new List<ARVMInstruction>()
             {
-                 new ARVMInstruction(OpCodes.Ldc_I4, 20),
+                 new ARVMInstruction(OpCodes.Ldc_I4, 10),
                  new ARVMInstruction(OpCodes.Ldc_I4, 10),
                  new ARVMInstruction(OpCodes.Add, null),
 
@@ -21,6 +25,9 @@ ARVM has for purpose to be used to solve arithmetics problems inside .NET assemb
 
             VM.Run();
             Console.WriteLine($"Result: {VM.vmStack.Pop()}");
+            Console.ReadLine();
+        }
+    }
 ```
 
 
