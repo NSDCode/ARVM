@@ -8,7 +8,22 @@ ARVM has for purpose to be used to solve arithmetics problems inside .NET assemb
 
 
 # Usage
-![image](https://user-images.githubusercontent.com/47573987/164846051-6209dea6-c296-4e15-8fa8-611a85e5425a.png)
+```cs
+            List<ARVMInstruction> instructions = new List<ARVMInstruction>()
+            {
+                 new ARVMInstruction(OpCodes.Ldc_I4, 20),
+                 new ARVMInstruction(OpCodes.Ldc_I4, 10),
+                 new ARVMInstruction(OpCodes.Add, null),
+
+            };
+
+            ARVM VM = new ARVM(instructions);
+
+            VM.Run();
+            Console.WriteLine($"Result: {VM.vmStack.Pop()}");
+```
+
+
 
 
 Create a list of ARVMInstructions, which will be basically your program, then create an instance of ARVM.
